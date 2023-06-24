@@ -1,0 +1,149 @@
+.packageItem{
+    border: 1px solid lightblue;
+    padding: 5px;
+    border-radius: 5px;
+    display:flex;
+     justify-content :space-between; 
+    
+    margin-bottom:20px;
+    background-color:white;
+    
+}
+.sipackage{
+    background-image: linear-gradient(to bottom, rgba(5, 2, 10, 0) 0%, rgba(255, 255, 255, 7) 100%), url('https://media.istockphoto.com/id/607997854/vector/india-vector-illustration.jpg?s=612x612&w=0&k=20&c=UK9tYgvSINaYnazo3ty_eWv5w-G4mctoBBayf64bUX8=');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+    height: 80%;
+    display:flex;
+    justify-content :space-between;
+    margin-right: 30px;
+    border-radius: 5px;  
+}
+.imageparent img{
+    height:40vh;
+    width: 80vh;
+ 
+}
+.siImg{
+    
+
+}
+
+.siDesc{
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+    margin-left:16px;
+    padding-right: 200px;
+    
+    flex:1;
+   
+}
+.siTitle{
+    font-size:40px;
+    color:rgb(47, 47, 53);
+    margin-top: 1px;
+    margin-bottom: 4px;
+    margin-left:10px;
+}
+.siDistance{
+    font-size: 19px;
+    margin-left:9px ;
+    font-weight: 600;
+    margin-bottom: 14px;
+}
+.siTaxiOp{
+    font-size: 17px;
+    margin-left:9px ;
+    background-color: #8fd293;
+    color:white;
+    width:max-content;
+    padding: 3px;
+    border-radius: 5px;
+    margin-bottom: 37px;
+}
+
+.siCancelOp{
+    font-size: 22px;
+    /* color:#0a6010; */
+    color: #303130;
+    font-weight: bold;
+    margin-top:90px;
+    margin-bottom: 4px;
+    margin-left:9px ;
+    height: fit-content;
+}
+.siCancelOpSubtitle{
+    font-size: 17px;
+    font-weight: 600;
+    color:rgb(235, 31, 34);
+    margin-left:9px ;
+}
+.siDetails{
+    flex:1;
+ margin-right: -25px;
+ padding: 2px;
+ 
+}
+.siRating{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 5px;
+    margin-top: 10px;
+   
+}
+.siRating>span{
+    font-weight: bold;
+    padding:2px;
+    font-size: 28px;
+    color:white;
+    background-color:rgb(103, 212, 103);
+    margin-right: 10px;
+    border-radius: 5px;
+    border-top-left-radius:10px;
+    border-bottom-right-radius:10px;
+}
+.siRating>button{
+    background-color: rgb(209, 62, 9);
+    color:white;
+    padding: 3px;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 5px;
+    border:none;
+    margin-left:20px;
+}
+.siDetailTexts{
+    text-align: right;
+    margin-top: 146px;
+    margin-left: 40px;
+    margin-bottom: -9px;
+    
+}
+.siPrice{
+    font-size:24px;
+    color:rgb(30, 28, 28);
+    font-weight: bold;
+
+    
+}
+.siTaxOp{
+   font-size: 12px;
+   color:grey;
+   margin-right: 120px;
+}
+.siCheckButton{
+    background-color: rgb(170, 61, 207);
+    color:white;
+    font-weight:780;
+    font-size: 15px;
+    padding: 10px 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 9px;
+}
+.siImg{
+   
+}

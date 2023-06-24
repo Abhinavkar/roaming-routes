@@ -24,6 +24,8 @@ export default function MainNavbar() {
   const [dropdown, setDropdown] = useState(false);
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [placement, setPlacement] = useState("left");
+  const token = localStorage.getItem("token");
+  const handleLogout = () => {};
 
   return (
     <Box>
@@ -77,24 +79,6 @@ export default function MainNavbar() {
                   Packages
                 </Text>
               </Link>
-
-              <Link to={"/Beaches"}>
-                <Text fontSize={"18px"} ml={"4%"} my={"1%"}>
-                  Beaches
-                </Text>
-              </Link>
-
-              <Link to={"/Mountains"}>
-                <Text fontSize={"18px"} ml={"4%"} my={"1%"}>
-                  Mountains
-                </Text>
-              </Link>
-
-              <Link to={"/Heritage"}>
-                <Text fontSize={"18px"} ml={"4%"} my={"1%"}>
-                  Heritage
-                </Text>
-              </Link>
             </DrawerBody>
           </DrawerContent>
         </Drawer>
@@ -121,7 +105,24 @@ export default function MainNavbar() {
         <ul className="nav-items">
           {navItems.map((item) => {
             if (item.title === "Inspirations") {
-              return (
+              if (token) {
+                navItems[4] = {
+                  id: 5,
+                  title: "Log out",
+                  path: "/signin",
+                  cName: "nav-item",
+                };
+                return (
+                  <>
+                    <Text
+                      onClick={handleLogout}
+                      fontSize={"18px"}
+                      color={"white"}
+                      display={{ base: "block", md: "none", lg: "none" }}
+                    ></Text>
+                  </>
+                );
+              } else {
                 <>
                   <Text
                     fontSize={"18px"}
@@ -130,8 +131,8 @@ export default function MainNavbar() {
                   >
                     <Link to={"/signin"}>Sign In</Link>
                   </Text>
-                </>
-              );
+                </>;
+              }
             }
             return (
               <Text

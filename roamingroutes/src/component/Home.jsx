@@ -4,6 +4,7 @@ import React from "react";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import Navbar from "./Navbar/Navbar";
+import Footer from "./Footer";
 import Sliders from "./Pages/Sliders";
 import SetSlider from "./Pages/SetSlider";
 import raja from "./assests/1.png";
@@ -45,6 +46,7 @@ export default function Home() {
           borderRadius={"5px"}
           src={lond}
           alt="hiii"
+          //onClick={}
         />
       </Box>
       <Sliders
@@ -113,6 +115,7 @@ export default function Home() {
           </GridItem>
         ))}
       </Grid>
+      <Footer />
     </div>
   );
 }

@@ -1,7 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Box, Heading, Text, Image, Flex } from "@chakra-ui/react";
+import { Box, Heading, Text, Image, Flex, Link } from "@chakra-ui/react";
 
-// yaha p swiper ka css add karna h 
+// yaha p swiper ka css add karna h
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -9,7 +9,7 @@ import "swiper/css/navigation";
 import "./style.css";
 import { MdLocationOn } from "react-icons/md";
 
-// yaha p swiper ka jo module add karna h documentation 
+// yaha p swiper ka jo module add karna h documentation
 import { Pagination, Navigation } from "swiper";
 import { Button } from "bootstrap";
 import { CircularProgress, CircularProgressLabel } from "@chakra-ui/react";
@@ -128,7 +128,14 @@ export default function Sliders({
                           </span>{" "}
                         </Text>
                       )}
-                      {el.price && <Text className="book">Book Now</Text>}
+                      {el.price && (
+                        <Text
+                          className="book"
+                          // onClick={(window.location.href = "./destination")}
+                        >
+                          <Link href="./destination">Book Now</Link>
+                        </Text>
+                      )}
                     </Flex>
                   </Box>
                 </SwiperSlide>
