@@ -1,0 +1,172 @@
+.quick{
+	color:white;
+	font-size: 1.8em;
+	font-weight: 500;
+	margin-left: -7%;
+	text-transform: capitalize;
+	
+}
+.quick:hover{
+	color:black;
+}
+.quick1:hover{
+	color:black;
+}
+
+.nav-item{
+	margin-left: 11%;
+	font-size: 1.3em;
+}
+
+.wq{
+	color: black;
+	text-decoration: none;
+	font-weight: 450;
+}
+.wq:hover{
+	color:white;
+}
+.quick1{
+	color: white;
+	font-size: 1.8em;
+	font-weight: 500;
+	margin-left: 18%;
+}
+
+
+.Footer {
+	background-color: #f4f4f4;
+	padding: 40px 0;
+  }
+  .container .col .quick1 ul li a{
+	text-decoration: none;
+	display: inline-block;
+
+  }
+  
+  .container {
+	padding-right: 2.5%;
+	max-width: 1250px;
+    padding-top: 1.1%;
+	background-color: rgb(145, 116, 116);
+  }
+  
+  .row {
+	margin-left:2%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	
+  }
+  
+  .co {
+	flex: 1 1 300px;
+	
+  }
+  
+  .co p {
+	margin-bottom: 20px;
+  }
+  
+  .footer-icons {
+	display: flex;
+  }
+  
+  .footer-icons i {
+	font-size: 20px;
+	margin-right: 10px;
+  }
+  
+  .col,
+  .coll {
+	flex: 1 1 200px;
+	margin-bottom: 20px;
+  }
+  
+  .col h5,
+  .coll h5 {
+	margin-bottom: 10px;
+	
+  }
+  
+  .col ul,
+  .coll p {
+	list-style: none;
+	margin-bottom: 1%;
+	
+  }
+  
+  .col li,
+  .coll p {
+	margin-bottom: 1px;
+	
+	
+  }
+  
+  .footer {
+	
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	font-weight: 400;
+	padding: 7px;
+	}
+
+  .twitter{
+	color: blue; 
+	background-color: white;
+  }
+  .whatsapp{
+	color: rgb(11, 204, 53);
+	background-color: white;
+  }
+  .instagram{
+	color:crimson;
+	background-color: white;
+  }
+  .linkedin{
+	color: rgb(11, 11, 211); 
+	background-color: rgb(225, 222, 222);
+  }
+  .footer-icons{
+	gap:15px;
+	margin-top: 10%;
+  }
+  .faso{
+	margin-top: 8%;
+	font-weight: 500;
+  }
+  .ro1{
+	max-width: 90%;
+	font-size: 1em;
+	font-weight: 500;
+	
+  }
+  .ro1:hover{
+	color:white;
+  }
+.footer-icons i{
+	display: inline-block;
+	
+	height: 40px;
+	width: 40px;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	transition: all 0.5s ease;
+}  
+.footer-icons:hover i{
+	background-color: rgb(211, 254, 248);
+	transform: translateY(2%) rotateX(-360deg);
+}
+@media(max-width: 767px){
+	.footer-col{
+		width: 50%;
+		margin-bottom: 30px;
+	}
+	}
+	@media(max-width: 574px){
+	  .footer-col{
+		width: 100%;
+	}
+	}
