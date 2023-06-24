@@ -63,7 +63,7 @@ const Footer = () => {
               </ul>
             </div>
             <div className="col1i">
-              <div className="quick">Quick Links</div>
+              <div className="quick">Contact Us</div>
               <div className="faso">
                 <i class="fa-solid fa-phone-volume"></i>📞76879809
               </div>

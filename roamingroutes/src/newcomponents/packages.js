@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import PackageItem from './packageItem';
 import Homepack from './homepack';
 import Navbar from '../component/Navbar/Navbar';
+import Footer from "../component/Footer"
 
 function BookingPackages() {
   const [data, setData] = useState(null);
@@ -37,7 +38,6 @@ function BookingPackages() {
   return (
     <>
     <Navbar/>
-    {/* <Homepack /> */}
       <PackageItem
         id={data.id}
         location={data.location}
@@ -47,6 +47,8 @@ function BookingPackages() {
       />
       <Homepack
 ></Homepack>   
+<Footer/>
+
  </>
   );
 }

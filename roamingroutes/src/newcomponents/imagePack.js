@@ -107,7 +107,7 @@ const Imagepack = () => {
             </div>
             <div className="dura">
             <div className="durat">
-                      <div className='indi'><img width="16%" height="110%" src="https://media.cnn.com/api/v1/images/stellar/prod/140127103345-peninsula-shanghai-deluxe-mock-up.jpg?q=w_2226,h_1449,x_0,y_0,c_fill"></img></div>
+                      <div className='indi'><img width="16%" height="110%" src="https://play-lh.googleusercontent.com/OhZSLjRDLvFLqtDp9bIgcvAweZIg5V5uIMI_7kOaS-9nPR043DUfoibkn1BgwG7Ai1U"></img></div>
                     <div><u>02h30m<br/></u>non-stop</div>
                     <div><b>10:10</b></div>
                     <div><b>13:10</b></div>
@@ -116,7 +116,7 @@ const Imagepack = () => {
             </div>
             <div className="dura">
             <div className="durat">
-                    <div className='indi'><img width="18%" height="110%" src="https://media.cnn.com/api/v1/images/stellar/prod/140127103345-peninsula-shanghai-deluxe-mock-up.jpg?q=w_2226,h_1449,x_0,y_0,c_fill"></img></div>
+                    <div className='indi'><img width="18%" height="110%" src="https://play-lh.googleusercontent.com/OhZSLjRDLvFLqtDp9bIgcvAweZIg5V5uIMI_7kOaS-9nPR043DUfoibkn1BgwG7Ai1U"></img></div>
                     <div><u>02h40m<br/></u>non-stop</div>
                     <div><b>19:55</b></div>
                     <div><b>22:40</b></div>
@@ -126,7 +126,7 @@ const Imagepack = () => {
             </div>
             <div className="dura">
             <div className="durat">
-                     <div className='indi'><img width="18%" height="110%" src="https://media.cnn.com/api/v1/images/stellar/prod/140127103345-peninsula-shanghai-deluxe-mock-up.jpg?q=w_2226,h_1449,x_0,y_0,c_fill"></img></div>
+                     <div className='indi'><img width="18%" height="110%" src="https://play-lh.googleusercontent.com/OhZSLjRDLvFLqtDp9bIgcvAweZIg5V5uIMI_7kOaS-9nPR043DUfoibkn1BgwG7Ai1U"></img></div>
                     <div><u>02h50m<br/></u>non-stop</div>
                     <div><b>13:10</b></div>
                     <div><b>16:10</b></div>
@@ -136,7 +136,7 @@ const Imagepack = () => {
             </div>
             <div className="dura">
             <div className="durat">
-                      <div className='indi'><img width="16%" height="110%" src="https://media.cnn.com/api/v1/images/stellar/prod/140127103345-peninsula-shanghai-deluxe-mock-up.jpg?q=w_2226,h_1449,x_0,y_0,c_fill"></img></div>
+                      <div className='indi'><img width="16%" height="110%" src="https://play-lh.googleusercontent.com/OhZSLjRDLvFLqtDp9bIgcvAweZIg5V5uIMI_7kOaS-9nPR043DUfoibkn1BgwG7Ai1U"></img></div>
                     <div><u>05h30m<br/></u>non-stop</div>
                     <div><b>07:05</b></div>
                     <div><b>12:35</b></div>
@@ -145,7 +145,7 @@ const Imagepack = () => {
             </div>
             <div className="dura">
             <div className="durat">
-                    <div className='indi'><img width="18%" height="110%" src="https://media.cnn.com/api/v1/images/stellar/prod/140127103345-peninsula-shanghai-deluxe-mock-up.jpg?q=w_2226,h_1449,x_0,y_0,c_fill"></img></div>
+                    <div className='indi'><img width="18%" height="110%" src="https://play-lh.googleusercontent.com/OhZSLjRDLvFLqtDp9bIgcvAweZIg5V5uIMI_7kOaS-9nPR043DUfoibkn1BgwG7Ai1U"></img></div>
                     <div><u>03h<br/></u>non-stop</div>
                     <div><b>17:35</b></div>
                     <div><b>20:20</b></div>
@@ -154,7 +154,7 @@ const Imagepack = () => {
             </div>
             <div className="dura">
             <div className="durat">
-                    <div className='indi'><img width="20%" height="110%" src="https://media.cnn.com/api/v1/images/stellar/prod/140127103345-peninsula-shanghai-deluxe-mock-up.jpg?q=w_2226,h_1449,x_0,y_0,c_fill"></img></div>
+                    <div className='indi'><img width="20%" height="110%" src="https://play-lh.googleusercontent.com/OhZSLjRDLvFLqtDp9bIgcvAweZIg5V5uIMI_7kOaS-9nPR043DUfoibkn1BgwG7Ai1U"></img></div>
                     <div><u>02h50m<br/></u>non-stop</div>
                     <div><b>20:40</b></div>
                     <div><b>23:35</b></div>

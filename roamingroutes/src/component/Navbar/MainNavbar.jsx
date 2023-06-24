@@ -64,7 +64,7 @@ export default function MainNavbar() {
                   className="image"
                   mr={"-7%"}
                 />
-                TravelWorld
+                Roaming Routes
               </DrawerHeader>
             </Link>
             <DrawerBody>
@@ -77,6 +77,12 @@ export default function MainNavbar() {
               <Link to={"/packages"}>
                 <Text fontSize={"18px"} ml={"4%"} my={"1%"}>
                   Packages
+                </Text>
+              </Link>
+
+              <Link to={"/signin"}>
+                <Text fontSize={"18px"} ml={"4%"} my={"1%"} cursor={"pointer"}>
+                  Signin
                 </Text>
               </Link>
             </DrawerBody>

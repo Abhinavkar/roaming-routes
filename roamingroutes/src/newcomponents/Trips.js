@@ -1,6 +1,8 @@
 import MyTrip from "./myTrip";
+import "./trip.css"
 import { useState,useEffect } from "react";
 import Navbar from "../component/Navbar/Navbar";
+import Footer from "../component/Footer"
 function Trips(){
     const [arr, setArr] = useState([]);
     const token = localStorage.getItem("token");
@@ -33,9 +35,10 @@ function Trips(){
         getData();
       }, []);
     
-    return(
-        <>
-          <Navbar></Navbar>
+    return(<>
+      <Navbar></Navbar>
+        <div className="ticketcard">
+         
             {
                 arr.map((item)=>{
                     return(
@@ -44,6 +47,9 @@ function Trips(){
                     )
                 })
             }
+        </div>
+        
+        <Footer/>
         </>
     )
 }

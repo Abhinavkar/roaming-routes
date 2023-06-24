@@ -1,10 +1,13 @@
 import { useState } from "react";
 import { useLocation } from "react-router-dom";
 import axios from "axios";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { DatePicker } from "antd";
 import moment from "moment";
+import "./price.css";
 import Navbar from "../component/Navbar/Navbar";
-import * as Components from "../component/components";
+import Footer from "../component/Footer";
 const { RangePicker } = DatePicker;
 
 function Price() {
@@ -21,6 +24,13 @@ function Price() {
   console.log("dates", dates);
   console.log("inputs", inputs);
   console.log("child", child);
+  const toastOptions = {
+    position: "bottom-right",
+    autoClose: 8000,
+    pauseOnHover: true,
+    draggable: true,
+    theme: "dark",
+  };
 
   const handleChange = (i, event) => {
     const values = [...inputs];
@@ -62,7 +72,7 @@ function Price() {
 
   const submitPrice = async () => {
     if (!token) {
-      alert("You are not logged in!");
+      toast.error("Please Login", toastOptions);
       window.location.href = "/signin";
     } else {
       var numberOfDays = 0;
@@ -85,7 +95,7 @@ function Price() {
       );
       console.log(data);
       if (data.msg === "Success") {
-        alert("Price submitted successfully");
+        toast.success("Hurrahh !!! Trip Booked ", toastOptions);
         window.location.href = "/";
       } else {
         alert("Error in submitting price");
@@ -94,47 +104,30 @@ function Price() {
   };
 
   return (
-    <>
-      <Navbar />
-      <div></div>
-
-      <Components.Container>
-        <Components.SignUpContainer>
-          <Components.Form>
-            <Components.Title>BOOKING DETAILS</Components.Title>
-            {inputs.map((input, i) => (
-              <div key={i}>
-                <Components.Input
-                  type="text"
-                  placeholder="Name"
-                  className="input_medicine"
-                  value={input.value}
-                  onChange={(event) => handleChange(i, event)}
-                />
-                <Components.Button
-                  className="medicine_button"
-                  onClick={() => handleRemoveClick(i)}
-                >
-                  Remove
-                </Components.Button>
-                <Components.Button
-                  className="medicine_button_add"
-                  onClick={handleAddClick}
-                >
-                  Add field
-                </Components.Button>
-              </div>
-            ))}
-            <Components.Input type="email" placeholder="Email" />
-            <Components.Input type="password" placeholder="Password" />
-            <Components.Button>Sign Up</Components.Button>
-          </Components.Form>
-        </Components.SignUpContainer>
-      </Components.Container>
-
-      <div className="container">
+    <div>
+      <Navbar></Navbar>
+      <div className="priced">
         <div className="prescription-doctor-medicine">
-          <h3>Adults:</h3>
+          <h3 className="Adults">Adults:</h3>
+          {inputs.map((input, i) => (
+            <div key={i}>
+              <input
+                className="input_medicine"
+                type="text"
+                value={input.value}
+                onChange={(event) => handleChange(i, event)}
+              />
+              <button
+                className="priceRemove"
+                onClick={() => handleRemoveClick(i)}
+              >
+                Remove
+              </button>
+            </div>
+          ))}
+          <button className="priceAdd" onClick={handleAddClick}>
+            Add field
+          </button>
         </div>
 
         <div className="children">
@@ -147,34 +140,40 @@ function Price() {
                 value={input.val}
                 onChange={(event) => hChange(i, event)}
               />
-              <button
-                className="medicine_button"
-                onClick={() => hRemoveClick(i)}
-              >
+              <button className="priceRemove" onClick={() => hRemoveClick(i)}>
                 Remove
               </button>
             </div>
           ))}
-          <button className="medicine_button_add" onClick={handAddClick}>
+          <button className="priceAdd" onClick={handAddClick}>
             Add field
           </button>
         </div>
 
         <div className="price_location">
           <h3>Destination:</h3>
-          <span>{destination}</span>
+          <span className="priceDisplay">{destination}</span>
         </div>
 
         <div className="price_cost">
           <h3>Cost:</h3>
-          <span>{cost}</span>
+          <span className="priceDisplay">{cost}</span>
+        </div>
+        <div className="priceCalendar">
+          <RangePicker
+            onChange={(dates, dateStrings) => {
+              setDates(dateStrings);
+            }}
+          />
         </div>
 
-        <RangePicker onChange={(dates, dateStrings) => setDates(dateStrings)} />
-        <button onClick={() => submitPrice()}>Submit</button>
-      </div>  
-    </>
+        <button onClick={() => submitPrice()} className="priceSubmit">
+          Submit
+        </button>
+      </div>
+      <Footer />
+      <ToastContainer />
+    </div>
   );
 }
-
 export default Price;

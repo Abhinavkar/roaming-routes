@@ -5,11 +5,12 @@
 
 .mytrip {
 	height: 60vh;
-	width: 60%;
+	width: 70%;
 	font-family: "Staatliches", cursive;
 	color: black;
 	font-size: 14px;
 	letter-spacing: 0.1em;
+
 }
 
 .ticket {

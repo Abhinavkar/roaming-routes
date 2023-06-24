@@ -7,7 +7,7 @@ const Homepack = () => {
         <section className="home">
             
             <div className="overlay"></div>
-            <video src = "https://drive.google.com/uc?export=download&id=1HZWPofaQIu1pzKHGMfU7lPyA3_iBARMt" muted autoPlay loop type='video/mp4'></video>
+            <video src = {video} muted autoPlay loop type='video/mp4'></video>
 
             <div className="homeContent container">
                     <div className="textDiv">

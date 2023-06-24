@@ -1,8 +1,10 @@
-import './mytrip.css'
-function MyTrip(props) {
+import './mytrip.css';
+import Footer from "../component/Footer"
+function myTrip(props) {
 console.log(props);
   
     return(
+		<>
         <div className='mytrip'>
             <div className="ticket" >
 	            <div className="left">
@@ -56,6 +58,8 @@ console.log(props);
 	        </div>
         </div>
         </div>
+	
+	</>
     )
 }
-export default MyTrip;
+export default myTrip;
