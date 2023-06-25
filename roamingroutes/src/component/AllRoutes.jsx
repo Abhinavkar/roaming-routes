@@ -23,7 +23,7 @@ export default function AllRoutes() {
       <Route path="/signin/packages" element={<Packages />}></Route>
       <Route path="/destination" element={<Destination />} />
       <Route path="/bookingPackages" element={<BookingPackages />} />
-      <Route path="images" element={<ImagePack />} />
+      <Route path="/images" element={<ImagePack />} />
       <Route path="/price" element={<Price />} />
       <Route path="/trips" element={<Trips />} />
 

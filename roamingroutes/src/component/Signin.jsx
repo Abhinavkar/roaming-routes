@@ -3,6 +3,8 @@ import * as Components from "./components";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./hi.css";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function Signin() {
   console.log("hiiii buttonClick");
@@ -16,6 +18,13 @@ function Signin() {
   const [pass1, setPassword1] = useState("");
 
   const navigate = useNavigate();
+  const toastOptions = {
+    position: "bottom-right",
+    autoClose: 8000,
+    pauseOnHover: true,
+    draggable: true,
+    theme: "dark",
+  };
 
   const handleSignup = async () => {
     const obj = {
@@ -34,15 +43,16 @@ function Signin() {
       });
       if (!response.ok) {
         const res = await response.json();
+        toast.error(res.msg, toastOptions);
         throw new Error(res);
       } else {
         const data = await response.json();
         console.log(data);
-        alert(data.msg);
+        toast.success("SIGN UP SUCCESSFULL", toastOptions);
       }
     } catch (error) {
       console.log(error);
-      alert(error.msg);
+      toast.error(error.msg, toastOptions);
     }
   };
 
@@ -63,10 +73,12 @@ function Signin() {
       if (!response.ok) {
         const res = await response.json();
         console.log(res);
+        toast.error(res.msg, toastOptions);
         throw new Error(res.msg);
       } else {
         const data = await response.json();
         console.log(data);
+        toast.success("success", toastOptions);
         window.location.href = "./packages";
         localStorage.setItem("token", data.token);
       }
@@ -153,6 +165,7 @@ function Signin() {
           </Components.Overlay>
         </Components.OverlayContainer>
       </Components.Container>
+      <ToastContainer />
     </div>
   );
 }
