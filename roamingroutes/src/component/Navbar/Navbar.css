@@ -1,0 +1,128 @@
+
+*{
+  margin: 0px;
+padding: 0px;
+}
+
+
+
+.navbar {
+  /* margin-top: -520px; */
+  height: 10%;
+  /* background:white; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* .navbar::after{
+  margin-top: -520px;
+
+} */
+.image{
+  width: 90px;
+    border-radius: 54%;
+    padding: 26px;
+    mix-blend-mode: luminosity;
+    margin-top: 4px;
+}
+
+.navbar-logo {
+  color: white;
+  text-decoration: none;
+  /* font-size: 2rem; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 10rem;
+margin-left: 20px;
+}
+
+.nav-items {
+  display: flex;
+  list-style: none;
+  text-align: center;
+  width: 70vw;
+  justify-content: flex-end;
+  margin-right: 2rem;
+  
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+  margin-right: 2rem;
+  padding: 6px 16px;
+  border-radius: 5px;
+}
+
+.nav-item a:hover {
+  background: rgb(171, 184, 184);
+}
+
+.btn {
+  border: none;
+  background: transparent;
+  padding: 6px 16px;
+  font-size: 1.1rem;
+  color: white;
+  background: rgb(0, 212, 212);
+  border-radius: 5px;
+  transition: 0.3s all ease-out;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: rgb(0, 212, 212);
+  background: white;
+}
+
+/* .inputClass{
+  padding: 20px 234px;
+  margin: 20px 40px 50px 40px;
+  text-align: left;
+  border-radius: 14px;
+  width: 57%;
+  display: inline-block;
+} */
+@media only screen and (max-width:765px) {
+  /* Your CSS styles for small screens go here */
+  .image{
+    width: 80px;
+    padding: 20px;
+  }
+  .nav-item{
+    margin-right: -10%;
+  }
+
+  .nav-item a {
+    /* text-decoration: none; */
+    /* color: white; */
+    font-size: 20px;
+    margin-right: 0px;
+    padding:0px ;
+    border-radius: 5px;
+  }
+}
+
+@media only screen and (max-width:990px) {
+  .image{
+    width: 80px;
+    padding: 20px;
+  }
+}
+@media only screen and (min-width: 280px) and (max-width:375px) {
+  /* Your CSS styles for small screens go here */
+ .navbar-logo{
+  margin-left: -21px;
+ }
+ .nav-item a {
+  font-size: 16px;
+ }
+}

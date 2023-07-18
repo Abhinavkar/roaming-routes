@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,800");
+
+* {
+  box-sizing: border-box;
+}
+
+.bodyback {
+  background-image: url('https://img.veenaworld.com/wp-content/uploads/2022/09/The-Ultimate-Guide-for-Planning-a-Trip-to-Switzerland-scaled-e1661976410756.jpg');
+
+background-repeat: no-repeat;
+background-size:cover ;
+  display: flex;
+  overflow-y: hidden;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  height: 100vh;
+  margin: -20px 0 50px;
+}
